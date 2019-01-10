@@ -59,6 +59,16 @@ public class MainActivity extends AppCompatActivity {
                 list.add(new BasicNameValuePair("login_type","admin"));
                 //Log.d("request", "starting");
 
+                //otherwiese we used HashMap
+//                HashMap<String,String> map = new HashMap<String, String>();
+//                map.put("use_nm","jigar");
+//                map.put("pass","123");
+//                map.put("login_type","admin");
+//
+//                List<NameValuePair>ddd = new ArrayList<NameValuePair>();
+//                ddd= (List<NameValuePair>) map;
+
+
                 JSONObject json = jsonParser.makeHttpRequest(
                         ProducList_Url, "POST", list);
 

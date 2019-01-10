@@ -25,7 +25,7 @@ import java.util.List;
  * Created by COMP11 on 16-Nov-18.
  */
 
-public class JSONParser {
+public class JSONParser extends Main2Activity {
 
     static InputStream is = null;
     static JSONObject jObj = null;
