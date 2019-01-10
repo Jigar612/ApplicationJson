@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.jigar.android.applicationjson.InsertRecord">
+
+    <Spinner
+        android:id="@+id/spiner_tab_no"
+        android:layout_width="wrap_content"
+        android:minWidth="200dp"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"></Spinner>
+    <EditText
+        android:id="@+id/ed_cust_nm"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="nm"
+        android:layout_below="@id/spiner_tab_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/ed_mobile_no"
+        android:layout_centerHorizontal="true"
+        android:hint="mobile"
+        android:ems="10"
+        android:maxLength="10"
+        android:inputType="number"
+        android:layout_below="@id/ed_cust_nm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/ed_tot_member"
+        android:hint="mem"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ed_mobile_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_ok"
+        android:text="Ok"
+        android:layout_below="@id/ed_tot_member"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
