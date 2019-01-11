@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
                 list.add(new BasicNameValuePair("user_nm","jigar"));
                 list.add(new BasicNameValuePair("pass","123"));
                 list.add(new BasicNameValuePair("login_type","admin"));
-
                 //*************
 //                    GsonBuilder gsonBuilder = new GsonBuilder();
 //                    Gson gson = gsonBuilder.create();
