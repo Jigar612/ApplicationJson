@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
             pd.setCancelable(true);
             pd.show();
         }
-
         protected JSONObject doInBackground(String... params) {
 
             try {
@@ -57,7 +56,33 @@ public class MainActivity extends AppCompatActivity {
                 list.add(new BasicNameValuePair("user_nm","jigar"));
                 list.add(new BasicNameValuePair("pass","123"));
                 list.add(new BasicNameValuePair("login_type","admin"));
-                //Log.d("request", "starting");
+
+                //*************
+//                    GsonBuilder gsonBuilder = new GsonBuilder();
+//                    Gson gson = gsonBuilder.create();
+//                    List<RowItemsJobRound> list = Arrays.asList(gson.fromJson(jsonArray,RowItemsJobRound[].class));
+                //   RowItemsJobRound[] responseModel = gson.fromJson(jsonArray,RowItemsJobRound[].class);
+                //*************
+                //OR
+                //*************
+                //  JsonObject jo = new JsonParser().parse(result).getAsJsonObject();
+                //  JsonArray jsonArray = jo.getAsJsonArray("GetRoundsWiseJobsResult");
+//                Iterator iterator = jsonArray.iterator();
+//                    List<RowItemsJobRound> details = new ArrayList<RowItemsJobRound>();
+//                    while(iterator.hasNext()){
+//                        JsonElement json2 = (JsonElement)iterator.next();
+//
+//                            Gson gson1 = new Gson();
+//                            RowItemsJobRound contact = gson1.fromJson(json2, RowItemsJobRound.class);
+//                            //can set some values in contact, if required
+//                            Boolean ans = contact.getIsStart();
+//                            if(ans.equals(true))
+//                            {
+//                                details.add(contact);
+//                            }
+//                    }
+                //*********
+
 
                 //otherwiese we used HashMap
 //                HashMap<String,String> map = new HashMap<String, String>();
@@ -82,9 +107,7 @@ public class MainActivity extends AppCompatActivity {
             }
             return null;
         }
-
         protected void onPostExecute(JSONObject json) {
-
             int success = 0;
             String message = "";
 
